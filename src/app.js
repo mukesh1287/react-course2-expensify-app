@@ -16,27 +16,6 @@ store.subscribe(() => {
     console.log(getVisibleExpenses(state.expenses, state.filters));
 });
 
-store.dispatch(addExpense({
-    description: 'Phone Bill',
-    notes: 'Phone Bill',
-    amount: 500,
-    createdAt: 1000
-}));
-
-store.dispatch(addExpense({
-    description: 'Water Bill',
-    notes: 'Water Bill',
-    amount: 1500,
-    createdAt: 100
-}));
-
-store.dispatch(addExpense({
-    description: 'Rent',
-    notes: 'Rent',
-    amount: 100,
-    createdAt: 3000
-}));
-
 
 const jsx = (
     <Provider store={store}>
